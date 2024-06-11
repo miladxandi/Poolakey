@@ -9,11 +9,11 @@ ext {
 }
 
 android {
-    compileSdkVersion buildVersions.compileSdkVersion
+    compileSdkVersion 30
     buildToolsVersion buildVersions.buildToolsVersion
     defaultConfig {
-        minSdkVersion buildVersions.minSdkVersion
-        targetSdkVersion buildVersions.targetSdkVersion
+        minSdkVersion 24
+        targetSdkVersion 30
         versionCode 1
         versionName poolakeyVersion
         consumerProguardFiles 'consumer-rules.pro'
@@ -51,9 +51,9 @@ dependencies {
 
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$libraryVersions.kotlin"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.4.20"
 
-    api "androidx.fragment:fragment:$libraryVersions.fragment"
+    api "androidx.fragment:fragment:1.4.0"
 
 }
 
